@@ -1,12 +1,12 @@
 #!name=RevenueCat多合一腳本[墨魚版] 解鎖
 //#!desc=RevenueCat多合一腳本[墨魚版]
 //#!openUrl=https://apps.apple.com/app/id477960671
-//#!icon=https://https://raw.githubusercontent.com/rjansng/usjs/_loon_mitm/metronome.png
+//#!icon=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/_loon_mitm/metronome.png
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/_loon_mitm/revenuecat/RevenueCat.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/_loon_mitm/revenuecat/RevenueCat.plugin
 
 [Script]
-http-request ^https:\/\/api\.revenuecat\.com\/.+\/subscribers\/[^/]+/(offerings|attributes)$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/_loon_mitm/revenuecat/RevenueCatHeaders.js, requires-body=false, tag=RevenueCat Headers 處理, enabled=true
+http-request ^https:\/\/api\.revenuecat\.com\/.+\/subscribers\/[^/]+/(offerings|attributes)$ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/_loon_mitm/revenuecat/RevenueCatHeaders.js, requires-body=false, tag=RevenueCat Headers 處理, enabled=true
 http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js, requires-body=true, tag=RevenueCat多合一腳本[墨魚版] 解鎖, enabled=true
 
 [MITM]

@@ -1,15 +1,15 @@
 #!name=蝦皮 自兌換獎勵 飛刀
 #!desc=v20230328
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/auto_redeem_knifethrow.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/auto_redeem_knifethrow.plugin
 
 [Script]
-cron "1 0 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_knife_list.js, tag=飛刀🔪$顯示兌換清單, enabled=false
-#cron "59 59 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_knifeS.js,  tag=飛刀🔪$超級兌換1 5蝦幣 (9000點), enabled=false
-#cron "0 0 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_knifeS.js,     tag=飛刀🔪$超級兌換2 5蝦幣 (9000點), enabled=false
-#cron "0 0 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_knife2.js,     tag=飛刀🔪$兌換1 5蝦幣 (9000點), enabled=true
-#cron "0 0 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_knife2.js,     tag=飛刀🔪$兌換2 5蝦幣 (9000點), enabled=true
-#cron "0 0 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_knife3.js,     tag=飛刀🔪$兌換  1蝦幣 (5000點), enabled=false
-#cron "0 0 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_knife4.js,     tag=飛刀🔪$兌換  0.5蝦幣 (3000點), enabled=false
-#cron "0 2 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_knife1.js,     tag=飛刀🔪$兌換  蝦幣寶箱 (1000點), enabled=true
+cron "1 0 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/redeem/redeem_knife_list.js, tag=飛刀🔪$顯示兌換清單, enabled=false
+#cron "59 59 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/redeem/redeem_knifeS.js,  tag=飛刀🔪$超級兌換1 5蝦幣 (9000點), enabled=false
+#cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/redeem/redeem_knifeS.js,     tag=飛刀🔪$超級兌換2 5蝦幣 (9000點), enabled=false
+#cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/redeem/redeem_knife2.js,     tag=飛刀🔪$兌換1 5蝦幣 (9000點), enabled=true
+#cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/redeem/redeem_knife2.js,     tag=飛刀🔪$兌換2 5蝦幣 (9000點), enabled=true
+#cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/redeem/redeem_knife3.js,     tag=飛刀🔪$兌換  1蝦幣 (5000點), enabled=false
+#cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/redeem/redeem_knife4.js,     tag=飛刀🔪$兌換  0.5蝦幣 (3000點), enabled=false
+#cron "0 2 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/redeem/redeem_knife1.js,     tag=飛刀🔪$兌換  蝦幣寶箱 (1000點), enabled=true
 

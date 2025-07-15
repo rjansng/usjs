@@ -1,7 +1,7 @@
 #!name=蝦皮 購物時避免干擾
 #!desc=v20231102 需放插件置頂。平時記得關閉。免出現驗證模式。此插件設定 MITM -mall.shopee.tw，會影響其它插件過濾及記錄。
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/shopee_mitm_not_mall.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/shopee_mitm_not_mall.plugin
 
 [MITM]
 hostname=-mall.shopee.tw

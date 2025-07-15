@@ -2,10 +2,10 @@
 #!desc=v20231109
 #!author=Sdany
 #!openUrl=https://apps.apple.com/app/id448142450
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/_loon_mitm/inapp_truecaller.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/_loon_mitm/inapp_truecaller.plugin
 
 [Script]
-http-request ^https:\/\/premium-noneu\.truecaller\.com\/v3\/subscriptions\/status$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/_loon_mitm/inapp_truecaller_status.js, requires-body=false, tag=truecaller status, enabled=true
+http-request ^https:\/\/premium-noneu\.truecaller\.com\/v3\/subscriptions\/status$ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/_loon_mitm/inapp_truecaller_status.js, requires-body=false, tag=truecaller status, enabled=true
 
 [MITM]
 hostname=premium-noneu.truecaller.com

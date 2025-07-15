@@ -2,35 +2,35 @@
 #!name=蝦皮 蝦皮果園 功能設定
 #!desc=v20231123 停用自動種植
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/auto_farm_func.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/auto_farm_func.plugin
 
 [Script]
-cron "30 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop_list_filter.js                                , enabled=false, tag=🌱顯示 種子清單Ｆ
-cron "5,25,45 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/farm_water_info.js                             , enabled=false, tag=🌱澆水通知 💦
-// cron "30 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/friend_help_v2.js                                , enabled=false, tag=🌱好友澆水測試
-cron "30 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/crop/shopee_crop_info.js                 , enabled=false, tag=🌱查看 作物狀態
-// http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/orchard\/context\/get\?friendId=.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop_info_friend.js,     requires-body=true, tag=🌱好友作物狀態 LOON Log, enabled=false
+cron "30 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop_list_filter.js                                , enabled=false, tag=🌱顯示 種子清單Ｆ
+cron "5,25,45 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/farm_water_info.js                             , enabled=false, tag=🌱澆水通知 💦
+// cron "30 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/friend_help_v2.js                                , enabled=false, tag=🌱好友澆水測試
+cron "30 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/_shopee/crop/shopee_crop_info.js                 , enabled=false, tag=🌱查看 作物狀態
+// http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/orchard\/context\/get\?friendId=.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop_info_friend.js,     requires-body=true, tag=🌱好友作物狀態 LOON Log, enabled=false
 
-// cron "1 0-4 * * Mon-Thu,Sun" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/crop/shopee_auto_cropB.js     , enabled=true , tag=🌱自動種植 次要種子 1 1300
-// cron "1 * * * Fri,Sat" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/crop/shopee_auto_cropB.js           , enabled=true , tag=🌱自動種植 次要種子 2 1300
-// cron "2 0 * * Mon-Thu,Sun" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/crop/shopee_auto_cropB2.js     , enabled=true , tag=🌱自動種植 次要種子 3 1700
-// cron "2 * * * Fri,Sat" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/crop/shopee_auto_cropB2.js           , enabled=true , tag=🌱自動種植 次要種子 4 1700
+// cron "1 0-4 * * Mon-Thu,Sun" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/_shopee/crop/shopee_auto_cropB.js     , enabled=true , tag=🌱自動種植 次要種子 1 1300
+// cron "1 * * * Fri,Sat" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/_shopee/crop/shopee_auto_cropB.js           , enabled=true , tag=🌱自動種植 次要種子 2 1300
+// cron "2 0 * * Mon-Thu,Sun" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/_shopee/crop/shopee_auto_cropB2.js     , enabled=true , tag=🌱自動種植 次要種子 3 1700
+// cron "2 * * * Fri,Sat" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/_shopee/crop/shopee_auto_cropB2.js           , enabled=true , tag=🌱自動種植 次要種子 4 1700
 
 
-// cron "1 5-10 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee_auto_cropC.js                                 , enabled=false, tag=🌱自動種植 水量200
+// cron "1 5-10 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee_auto_cropC.js                                 , enabled=false, tag=🌱自動種植 水量200
 
-cron "30 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop_list.js                                , enabled=false, tag=🌱顯示 種子清單
+cron "30 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop_list.js                                , enabled=false, tag=🌱顯示 種子清單
 
-//cron "30 00 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_name_get.js           , enabled=false, tag=🌱顯示 目前設定的種子
-//cron "55 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_nameB.js              , enabled=true , tag=🌱SSC 次要種子
-// cron "55 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_name60.js             , enabled=false, tag=🌱SMC 60蝦幣黃金樹💰
-// cron "55 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_name1.js              , enabled=true , tag=🌱SMC 蝦幣💰
-// cron "55 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_name2.js              , enabled=false, tag=🌱SMC 布丁🍮
-// cron "55 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_name3.js              , enabled=false, tag=🌱SMC 奶茶.💰
-// cron "55 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_name4.js              , enabled=false, tag=🌱SMC 牛奶糖.💰
-// cron "55 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_name5.js              , enabled=false, tag=🌱SMC 巧菲斯.💰
-// cron "55 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_name6.js              , enabled=false, tag=🌱SMC 77乳加.💰
-// cron "55 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop/shopee_set_crop_name7.js              , enabled=false, tag=🌱SMC 嗨啾糖.💰
+//cron "30 00 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_name_get.js           , enabled=false, tag=🌱顯示 目前設定的種子
+//cron "55 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_nameB.js              , enabled=true , tag=🌱SSC 次要種子
+// cron "55 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_name60.js             , enabled=false, tag=🌱SMC 60蝦幣黃金樹💰
+// cron "55 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_name1.js              , enabled=true , tag=🌱SMC 蝦幣💰
+// cron "55 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_name2.js              , enabled=false, tag=🌱SMC 布丁🍮
+// cron "55 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_name3.js              , enabled=false, tag=🌱SMC 奶茶.💰
+// cron "55 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_name4.js              , enabled=false, tag=🌱SMC 牛奶糖.💰
+// cron "55 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_name5.js              , enabled=false, tag=🌱SMC 巧菲斯.💰
+// cron "55 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_name6.js              , enabled=false, tag=🌱SMC 77乳加.💰
+// cron "55 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop/shopee_set_crop_name7.js              , enabled=false, tag=🌱SMC 嗨啾糖.💰
 
 // SET MASTER CROP
 // SET SECOND CROP

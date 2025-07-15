@@ -4,27 +4,27 @@
 #!select=蝦蝦果園站外澆水Link,預設:0,1,2,3
 #!select=蝦蝦果園站外澆水LinkTG,預設:是,否
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/auto_farm.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/auto_farm.plugin
 
 [Script]
-cron "5,30,50 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/farm_water.js                     , enabled=true, tag=🌱果園狀態 更新 收成 通知🥬
-cron "5 6 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/share_link.js                           , enabled=true, tag=🌱取得站外澆水💦Link🔗
-cron "5 6,7,8,12,18 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/brands_ads_task_claim.js      , enabled=true, tag=🌱品牌商店 領50💧
-cron "7 0/4 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/grocery_store_water.js                , enabled=true, tag=🌱推薦商店 領30💧x3
-cron "10 0/4 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/tasks_checkin.js                     , enabled=true, tag=🌱任務打卡 3次💧
-cron "50 4,5,12 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/tasks_signin_bundle.js               , enabled=true, tag=🌱任務簽到獎勵
-cron "50 5-23/3 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/tasks_mission_claim.js            , enabled=true, tag=🌱任務領取水滴💧
-cron "19 0,4 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/buy_free_item.js                     , enabled=true, tag=🌱自動購買免費道具🛠
-cron "10 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use_auto.js                       , enabled=true, tag=🌱自動使用道具🛠
+cron "5,30,50 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/farm_water.js                     , enabled=true, tag=🌱果園狀態 更新 收成 通知🥬
+cron "5 6 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/share_link.js                           , enabled=true, tag=🌱取得站外澆水💦Link🔗
+cron "5 6,7,8,12,18 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/brands_ads_task_claim.js      , enabled=true, tag=🌱品牌商店 領50💧
+cron "7 0/4 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/grocery_store_water.js                , enabled=true, tag=🌱推薦商店 領30💧x3
+cron "10 0/4 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/tasks_checkin.js                     , enabled=true, tag=🌱任務打卡 3次💧
+cron "50 4,5,12 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/tasks_signin_bundle.js               , enabled=true, tag=🌱任務簽到獎勵
+cron "50 5-23/3 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/tasks_mission_claim.js            , enabled=true, tag=🌱任務領取水滴💧
+cron "19 0,4 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/buy_free_item.js                     , enabled=true, tag=🌱自動購買免費道具🛠
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/prop_use_auto.js                       , enabled=true, tag=🌱自動使用道具🛠
 
-// cron "50 23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop_list.js                           , enabled=true, tag=🌱顯示 種子清單🌱
+// cron "50 23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop_list.js                           , enabled=true, tag=🌱顯示 種子清單🌱
 
-//cron "5 8-20/3 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/tasks_message_anonymous_help.js    , enabled=true, tag=🌱取得站外澆水💦記錄
-// cron "50 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/crop_reward_claim.js                   , enabled=false, tag=🌱自動更新作物狀態 待合併
-// cron "0 0 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/crop/shopee_auto_crop.js           , enabled=false, tag=🌱自動種植 搶種子🌱
-// cron "55 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/crop/shopee_auto_harvest.js         , enabled=true, tag=🌱自動收成🪴
-// cron "5,45 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/crop/shopee_auto_water.js         , enabled=false, tag=🌱自動澆水💦
-// cron "5 0/5 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/friend_help.js                        , enabled=false, tag=🌱自動幫朋友 澆水💦
+//cron "5 8-20/3 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/tasks_message_anonymous_help.js    , enabled=true, tag=🌱取得站外澆水💦記錄
+// cron "50 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/crop_reward_claim.js                   , enabled=false, tag=🌱自動更新作物狀態 待合併
+// cron "0 0 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/_shopee/crop/shopee_auto_crop.js           , enabled=false, tag=🌱自動種植 搶種子🌱
+// cron "55 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/_shopee/crop/shopee_auto_harvest.js         , enabled=true, tag=🌱自動收成🪴
+// cron "5,45 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/_shopee/crop/shopee_auto_water.js         , enabled=false, tag=🌱自動澆水💦
+// cron "5 0/5 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/farm/friend_help.js                        , enabled=false, tag=🌱自動幫朋友 澆水💦
 
 //#!date=2023-09-18
 //。[作物ID]:參考用。[作物名稱]:4蝦幣(預設)，多名稱用[ ; ]區隔，名稱越完整不容易錯；[作物名稱的判斷]:0 文字開頭，1 任何位置，預設:0,1~

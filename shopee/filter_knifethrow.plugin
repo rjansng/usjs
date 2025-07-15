@@ -3,10 +3,10 @@
 #!desc=v20230907 每年 過年時期活動 (2個月活動？)
 #!select=蝦蝦飛刀模式,(預設),0干擾,0干擾;調整2,0干擾;調整3
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter_knifethrow.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter_knifethrow.plugin
 
 [Script]
-http-response ^https:\/\/games\.deo\.shopeemobile\.com\/shopee\/mkt\/games\/gameplatform\/assets\/3bc44cf27a009375525c667398738826_1599811773\?appid=KKyN58ob6K6Nln3whP$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/knifethrow/filter_knife_num_adj.js, requires-body=true, tag=蝦蝦飛刀 模式調整, enabled=true
+http-response ^https:\/\/games\.deo\.shopeemobile\.com\/shopee\/mkt\/games\/gameplatform\/assets\/3bc44cf27a009375525c667398738826_1599811773\?appid=KKyN58ob6K6Nln3whP$ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/knifethrow/filter_knife_num_adj.js, requires-body=true, tag=蝦蝦飛刀 模式調整, enabled=true
 
 [MITM]
 hostname = games.deo.shopeemobile.com

@@ -2,17 +2,17 @@
 #!name=蝦皮 蝦蝦寵物村🐥 自動化
 #!desc=v20240414
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/auto_pet.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/auto_pet.plugin
 
 [Script]
-cron "10 0/3 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/give_food.js           , enabled=true, tag=🐥自動拜訪、求飼料、贈送飼料🍎
-cron "5 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/task_daily_claim.js       , enabled=true, tag=🐥自動簽到、領飼料、任務獎勵
-cron "10 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/food_feed.js             , enabled=true, tag=🐥自動餵食、退休休息、出門工作🥬
-cron "30 0/4 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/school_like.js         , enabled=true, tag=🐥自動幫朋友 按讚❤️
-cron "5 6-23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/game_progress.js        , enabled=true, tag=🐥取得學校遊戲狀態ℹ️
+cron "10 0/3 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/give_food.js           , enabled=true, tag=🐥自動拜訪、求飼料、贈送飼料🍎
+cron "5 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/task_daily_claim.js       , enabled=true, tag=🐥自動簽到、領飼料、任務獎勵
+cron "10 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/food_feed.js             , enabled=true, tag=🐥自動餵食、退休休息、出門工作🥬
+cron "30 0/4 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/school_like.js         , enabled=true, tag=🐥自動幫朋友 按讚❤️
+cron "5 6-23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/game_progress.js        , enabled=true, tag=🐥取得學校遊戲狀態ℹ️
 
-#cron "10 0/2 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/feed.js               , enabled=true, tag=🐥自動餵食🥬
-#cron "10 1/2 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/clean.js              , enabled=true, tag=🐥自動清潔🛁
-#cron "5 4/3 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/snack_obtain.js        , enabled=false, tag=🐥自動領飼料🍏
-#cron "5 7,8,12 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/reward.js           , enabled=true, tag=🐥領玩過登入獎勵(需先手動玩耍)
-#cron "5 5-22 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/claim_level_reward.js , enabled=true, tag=🐥自動升級🔝
+#cron "10 0/2 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/feed.js               , enabled=true, tag=🐥自動餵食🥬
+#cron "10 1/2 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/clean.js              , enabled=true, tag=🐥自動清潔🛁
+#cron "5 4/3 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/snack_obtain.js        , enabled=false, tag=🐥自動領飼料🍏
+#cron "5 7,8,12 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/reward.js           , enabled=true, tag=🐥領玩過登入獎勵(需先手動玩耍)
+#cron "5 5-22 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/claim_level_reward.js , enabled=true, tag=🐥自動升級🔝

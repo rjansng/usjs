@@ -1,12 +1,12 @@
 #!name=蝦皮 寵物村🐥消耗寵物、飼料，賺撲滿蝦幣
 #!desc=v20240815 預設：一般狀態；待餵食：已餵過食、待餵食；備援：未餵過食，之寵物出門。
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pets_foods_wasting.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pets_foods_wasting.plugin
 #!select=派出寵物,預設:不處理,預設,待餵食,備援
 #!select=預設寵物金額,預設:0.004,0.0026,0.0017
 #!select=備援寵物金額,預設:0.0017,0.0026,0.004
 
 [Script]
-cron "10 0 1 1 *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/pet/pets_foods_wasting.js           , enabled=false, tag=🐥寵物村 切換寵物
-http-request ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/dormitory\/list\?activityCode=[^=&]+&eventCode=[^=&]+&lifeStatus=1&pageNum=1&pageSize=12 script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_dormitory_list.js, requires-body=true, enabled=true, tag=🐥寵物村 宿舍 切換寵物
-// http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/home.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_home.js, requires-body=true, enabled=true, tag=寵物村 狀態
+cron "10 0 1 1 *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/pet/pets_foods_wasting.js           , enabled=false, tag=🐥寵物村 切換寵物
+http-request ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/dormitory\/list\?activityCode=[^=&]+&eventCode=[^=&]+&lifeStatus=1&pageNum=1&pageSize=12 script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/pet_dormitory_list.js, requires-body=true, enabled=true, tag=🐥寵物村 宿舍 切換寵物
+// http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/home.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/pet_home.js, requires-body=true, enabled=true, tag=寵物村 狀態

@@ -10,20 +10,20 @@
 //#!select=手動領蝦幣任務獎勵,預設,否,是
 //#!select=領蝦幣任務獎勵UA,預設,否,是
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/auto_run.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/auto_run.plugin
 
 [Script]
-cron "55 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/tasks_check_list.js               , enabled=true, tag=🍤搶蝦幣💰每日任務 重設、記錄, argument="0"
-cron "16 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/shopee_checkin.js                 , enabled=true, tag=🍤每日簽到💰
-cron "30 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/mkt_coins_task_claim.js           , enabled=true, tag=🍤我的蝦幣💰領蝦幣任務
-cron "9 0/7 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/shopee_update_token.js          , enabled=true, tag=🍤更新token
-cron "5,30 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/tasks_check_list.js                 , enabled=true, tag=🍤搶蝦幣💰每日任務 重設、記錄5, argument="0"
-cron "50 0,12,23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/shopee_get_user_voucher_list.js , enabled=true, tag=🎁查現有未兌換優惠券 (要記得換)
-cron "50 0,5-23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/shopee_get_user_coins.js                 , enabled=true, tag=🍤現有蝦幣💰
+cron "55 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/tasks_check_list.js               , enabled=true, tag=🍤搶蝦幣💰每日任務 重設、記錄, argument="0"
+cron "16 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/shopee_checkin.js                 , enabled=true, tag=🍤每日簽到💰
+cron "30 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/mkt_coins_task_claim.js           , enabled=true, tag=🍤我的蝦幣💰領蝦幣任務
+cron "9 0/7 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/shopee_update_token.js          , enabled=true, tag=🍤更新token
+cron "5,30 0 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/tasks_check_list.js                 , enabled=true, tag=🍤搶蝦幣💰每日任務 重設、記錄5, argument="0"
+cron "50 0,12,23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/shopee_get_user_voucher_list.js , enabled=true, tag=🎁查現有未兌換優惠券 (要記得換)
+cron "50 0,5-23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/shopee_get_user_coins.js                 , enabled=true, tag=🍤現有蝦幣💰
 
-// cron "20,50 1-23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/shopee_update_token_re.js   , enabled=true, tag=🍤有需要就會更新token
-// cron "11,51 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/shopee_pre_cookie.js           , enabled=false, tag=🍤蝦皮 Pre Cookie
-// cron "10 12 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/shopee_luckydraw_3eggs.js         , enabled=true, tag=🍤玩寶箱遊戲1次 (特蒐任務 領機會1次)
-// cron "50 0/3 1-18 * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/collectible/task_reward.js                , enabled=true, tag=🎡特蒐任務 自動玩
+// cron "20,50 1-23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/shopee_update_token_re.js   , enabled=true, tag=🍤有需要就會更新token
+// cron "11,51 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/shopee_pre_cookie.js           , enabled=false, tag=🍤蝦皮 Pre Cookie
+// cron "10 12 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/shopee_luckydraw_3eggs.js         , enabled=true, tag=🍤玩寶箱遊戲1次 (特蒐任務 領機會1次)
+// cron "50 0/3 1-18 * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/collectible/task_reward.js                , enabled=true, tag=🎡特蒐任務 自動玩
 // 11 領取活動獎勵 s 已加密，不處理。
-// cron "11 0,4,23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/scripts1/shopee_luckydraw.js          , enabled=true, tag=🍤自動抽👉免運寶箱.蝦幣寶箱
+// cron "11 0,4,23 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/scripts1/shopee_luckydraw.js          , enabled=true, tag=🍤自動抽👉免運寶箱.蝦幣寶箱

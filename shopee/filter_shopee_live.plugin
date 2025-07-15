@@ -17,36 +17,36 @@
 #!select=蝦皮直播過濾蝦幣.2,0,1,2,3,4,5,6,7,8,9
 //#!select=蝦皮直播等待秒數測試,0,6,-1
 //#!author=Sdany
-//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/filter_shopee_live.plugin
+//#!openUrl=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/filter_shopee_live.plugin
 
 [Script]
-cron "1/5 10-13,20-22 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/lptab_item_MaxCoins_notify.js   , enabled=true, tag=高額蝦幣通知 0.5 以上
-// cron "55 * * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/coin_joinv2.js   , enabled=false, tag=加入直播
-// http-request ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/coin\/can_claim script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/coin_can_claim_Q.js       , enabled=true, requires-body=true, tag=蝦皮直播 可領蝦幣 通知
+cron "1/5 10-13,20-22 * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/lptab_item_MaxCoins_notify.js   , enabled=true, tag=高額蝦幣通知 0.5 以上
+// cron "55 * * * *" script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/coin_joinv2.js   , enabled=false, tag=加入直播
+// http-request ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/coin\/can_claim script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/coin_can_claim_Q.js       , enabled=true, requires-body=true, tag=蝦皮直播 可領蝦幣 通知
 
-http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/lptab\/item script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/lptab_item.js                                    , enabled=true, requires-body=true, tag=蝦皮直播 過濾 清單 s
-http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/coin\/can_claim script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/coin_can_claim.js           , enabled=true, requires-body=true, tag=蝦皮直播 領蝦幣 通知 s
-http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/coin\/user_config\?uid=\d+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/user_config.js   , enabled=true, requires-body=true, tag=蝦皮直播 蝦幣資料 s
-http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/coin\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/user_config.js                     , enabled=true, requires-body=true, tag=蝦皮直播 蝦幣資料 2 s
-http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/full_screen\/session script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/session_full_screen.js                  , enabled=true, requires-body=true, tag=蝦皮直播 為你推薦 過濾 s
-http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/joinv2 script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/session_joinv2.js                    , enabled=true, requires-body=true, tag=蝦皮直播 加入直播 過濾 s
-http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/activity_info script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/session_activity_info.js      , enabled=true, requires-body=true, tag=蝦皮直播 活動 過濾 s
+http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/lptab\/item script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/lptab_item.js                                    , enabled=true, requires-body=true, tag=蝦皮直播 過濾 清單 s
+http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/coin\/can_claim script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/coin_can_claim.js           , enabled=true, requires-body=true, tag=蝦皮直播 領蝦幣 通知 s
+http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/coin\/user_config\?uid=\d+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/user_config.js   , enabled=true, requires-body=true, tag=蝦皮直播 蝦幣資料 s
+http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/coin\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/user_config.js                     , enabled=true, requires-body=true, tag=蝦皮直播 蝦幣資料 2 s
+http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/full_screen\/session script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/session_full_screen.js                  , enabled=true, requires-body=true, tag=蝦皮直播 為你推薦 過濾 s
+http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/joinv2 script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/session_joinv2.js                    , enabled=true, requires-body=true, tag=蝦皮直播 加入直播 過濾 s
+http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/activity_info script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/session_activity_info.js      , enabled=true, requires-body=true, tag=蝦皮直播 活動 過濾 s
 
-http-request ^https:\/\/chatroom-live\.shopee\.tw\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule.js                                               , enabled=true, requires-body=true, tag=蝦皮直播 過濾 訊息
-http-response ^https:\/\/chatroom-live\.shopee\.tw\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule_s.js                                            , enabled=true, requires-body=true, tag=蝦皮直播 過濾 訊息 s
-// http-request ^https:\/\/play-[^\.\/]+\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule.js                        , enabled=true, requires-body=true, tag=蝦皮直播 過濾 影像
-// http-request ^http:\/\/[^\/]+\/play-[^\.\/]+\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule.js                 , enabled=true, requires-body=true, tag=蝦皮直播 過濾 影像IP
-http-request ^https:\/\/play-[^\.\/]+\.[^\.]+\.shopee\.[^\.\/]+\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/live_stream.js                              , enabled=true, requires-body=false, tag=蝦皮直播 過濾 影像 2
-http-request ^http:\/\/[^\/]+\/play-[^\.\/]+\.[^\.]+\.shopee\.[^\.\/]+\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/live_stream.js                       , enabled=true, requires-body=false, tag=蝦皮直播 過濾 影像IP 2
+http-request ^https:\/\/chatroom-live\.shopee\.tw\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule.js                                               , enabled=true, requires-body=true, tag=蝦皮直播 過濾 訊息
+http-response ^https:\/\/chatroom-live\.shopee\.tw\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule_s.js                                            , enabled=true, requires-body=true, tag=蝦皮直播 過濾 訊息 s
+// http-request ^https:\/\/play-[^\.\/]+\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule.js                        , enabled=true, requires-body=true, tag=蝦皮直播 過濾 影像
+// http-request ^http:\/\/[^\/]+\/play-[^\.\/]+\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule.js                 , enabled=true, requires-body=true, tag=蝦皮直播 過濾 影像IP
+http-request ^https:\/\/play-[^\.\/]+\.[^\.]+\.shopee\.[^\.\/]+\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/live_stream.js                              , enabled=true, requires-body=false, tag=蝦皮直播 過濾 影像 2
+http-request ^http:\/\/[^\/]+\/play-[^\.\/]+\.[^\.]+\.shopee\.[^\.\/]+\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/live_stream.js                       , enabled=true, requires-body=false, tag=蝦皮直播 過濾 影像IP 2
 // // http://154.85.73.252/play-bs-src-ww.livestream.shopee.com/live/tw-live-133325-3455307.flv?
-// http-response ^https:\/\/play-[^\-\/]+-las\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule_s.js                 , enabled=true, binary-body-mode=true, requires-body=true, tag=蝦皮直播 過濾 影像 s
-// http-request ^http:\/\/[^\/]+\/play-[^\-\/]+-las\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule.js             , enabled=true, requires-body=true, tag=蝦皮直播 過濾 影像IP
-// http-response ^http:\/\/[^\/]+\/play-[^\-\/]+-las\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule_s.js          , enabled=true, binary-body-mode=true, requires-body=true, tag=蝦皮直播 過濾 影像IP s
+// http-response ^https:\/\/play-[^\-\/]+-las\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule_s.js                 , enabled=true, binary-body-mode=true, requires-body=true, tag=蝦皮直播 過濾 影像 s
+// http-request ^http:\/\/[^\/]+\/play-[^\-\/]+-las\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule.js             , enabled=true, requires-body=true, tag=蝦皮直播 過濾 影像IP
+// http-response ^http:\/\/[^\/]+\/play-[^\-\/]+-las\.(livetech|livestream)\.shopee\.tw\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule_s.js          , enabled=true, binary-body-mode=true, requires-body=true, tag=蝦皮直播 過濾 影像IP s
 
-http-request ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule.js                              , enabled=true, requires-body=true, tag=蝦皮直播 過濾 session
-http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule_s.js                           , enabled=true, requires-body=true, tag=蝦皮直播 過濾 session s
-http-request ^https:\/\/live\.shopee\.tw\/(im|api)\/v1\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule.js                                          , enabled=true, requires-body=true, tag=蝦皮直播 過濾1
-http-response ^https:\/\/live\.shopee\.tw\/(im|api)\/v1\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/live/url_rule_s.js                                       , enabled=true, requires-body=true, tag=蝦皮直播 過濾1 s
+http-request ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule.js                              , enabled=true, requires-body=true, tag=蝦皮直播 過濾 session
+http-response ^https:\/\/live\.shopee\.tw\/api\/v1\/session\/[^\/]+\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule_s.js                           , enabled=true, requires-body=true, tag=蝦皮直播 過濾 session s
+http-request ^https:\/\/live\.shopee\.tw\/(im|api)\/v1\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule.js                                          , enabled=true, requires-body=true, tag=蝦皮直播 過濾1
+http-response ^https:\/\/live\.shopee\.tw\/(im|api)\/v1\/.+ script-path=https://raw.githubusercontent.com/rjansng/usjs/refs/heads/main/shopee/filter/live/url_rule_s.js                                       , enabled=true, requires-body=true, tag=蝦皮直播 過濾1 s
 
 [MITM]
 hostname=live.shopee.tw,chatroom-live.shopee.tw,*.livetech.shopee.tw,*.livestream.shopee.tw,*.livestream.shopee.com
