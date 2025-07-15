@@ -2,5 +2,6 @@ DOMAIN-SUFFIX,shopee.tw
 DOMAIN-SUFFIX,shopeemobile.com
 DOMAIN-SUFFIX,somee.com
 DOMAIN-SUFFIX,sdany.org
+DOMAIN-SUFFIX,raw.githubusercontent.com
 URL-REGEX,[^\/]+\.shopee\.[^\/]+
 
