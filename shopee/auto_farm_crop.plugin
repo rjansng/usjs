@@ -1,0 +1,28 @@
+#!name=蝦皮 蝦蝦果園🌱 自動種植
+#!desc=v20240523
+#!input=自動種植等待秒
+#!input=蝦蝦果園預種植作物名稱
+#!input=蝦蝦果園預種植作物名稱2
+#!input=蝦蝦果園待種植作物ID
+#!input=蝦蝦果園待種植作物名稱
+#!input=蝦蝦果園待種植作物ID_S
+#!input=蝦蝦果園待種植作物名稱_S
+#!input=蝦蝦果園KEY
+//#!openUrl=https://sdany.somee.com/usjs/shopee/auto_farm_crop.plugin
+
+[Script]
+cron "50 23 * * *" script-path=https://sdany.somee.com/usjs/shopee/farm/crop_list.js               , enabled=true, tag=🌱取得 種子資料🌱
+cron "0 0 * * *" script-path=https://sdany.somee.com/usjs/shopee/farm/auto_crop.js                 , enabled=true, tag=🌱自動種植🌱
+cron "1 0,1 * * *" script-path=https://sdany.somee.com/usjs/shopee/farm/auto_crop_s.js               , enabled=true, tag=🌱自動種植 次要🌱
+
+// cron "0 0 * * Mon-Fri" script-path=https://sdany.somee.com/usjs/shopee/farm/auto_crop.js           , enabled=true, tag=🌱自動種植🌱
+//cron "50 * * * Fri,Sat" script-path=https://sdany.somee.com/usjs/shopee/farm/crop_list.js        , enabled=true, tag=🌱取得 種子資料 次要 五六🌱
+//cron "1 * * * Fri,Sat" script-path=https://sdany.somee.com/usjs/shopee/farm/auto_crop_s.js       , enabled=true, tag=🌱自動種植 次要 五六🌱
+
+
+//cron "50 23 * * Mon-Thu,Sun" script-path=https://sdany.somee.com/usjs/shopee/farm/crop_list.js   , enabled=true, tag=🌱取得 種子資料🌱
+//cron "0 0 * * Mon-Fri" script-path=https://sdany.somee.com/usjs/shopee/farm/auto_crop.js         , enabled=true, tag=🌱自動種植🌱
+//cron "1 0-6 * * Mon-Thu,Sun" script-path=https://sdany.somee.com/usjs/shopee/farm/auto_crop_s.js , enabled=true, tag=🌱自動種植 次要 平時🌱
+
+//cron "50 * * * Fri,Sat" script-path=https://sdany.somee.com/usjs/shopee/farm/crop_list.js        , enabled=true, tag=🌱取得 種子資料 次要 五六🌱
+//cron "1 * * * Fri,Sat" script-path=https://sdany.somee.com/usjs/shopee/farm/auto_crop_s.js       , enabled=true, tag=🌱自動種植 次要 五六🌱

@@ -1,0 +1,12 @@
+#!name=蝦皮寵物村 自動兌換蝦幣 各別
+#!desc=v20231005 [3蝦幣限點]:(預設)3200點以上才兌換3蝦幣。執行時間 235958 配合 [兌換等待秒] 調整時間。連網喚醒功能。
+#!input=兌換等待秒
+#!select=3蝦幣限點,0,1200,2200,3200,5000
+//#!author=Sdany
+//#!openUrl=https://sdany.somee.com/usjs/shopee/auto_redeem5.plugin
+
+[Script]
+cron "56 59 23 * * *" script-path=https://sdany.somee.com/usjs/shopee/redeem/redeem_pet_list.js , enabled=true, tag=🐥寵物村 連網喚醒
+cron "58 59 23 * * *" script-path=https://sdany.somee.com/usjs/shopee/redeem/redeem_pet.js      , enabled=true, tag=🐥寵物村 兌 3 蝦幣 (1200點)
+cron "58 59 23 * * *" script-path=https://sdany.somee.com/usjs/shopee/redeem/redeem_pet_15.js   , enabled=true, tag=🐥寵物村 兌 1.5 蝦幣 (500點)
+

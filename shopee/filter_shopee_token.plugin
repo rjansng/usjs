@@ -1,0 +1,14 @@
+//#!date=2023-09-07
+#!name=蝦皮 自動化 過濾 TOKEN
+#!desc=v20231214 簽到取得 token。
+#!select=簽到失敗偽裝為成功,預設(否),否,是
+//#!author=Sdany
+//#!openUrl=https://sdany.somee.com/usjs/shopee/filter_shopee_token.plugin
+
+[Script]
+http-response ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api/v2\/settings$ script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_checkin_settings.js, requires-body=true, tag=過濾 每日簽到資訊, enabled=true
+http-request ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v2\/checkin_new$ script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_get_checkin.js, requires-body=true, tag=取得 簽到資訊 TOKEN, enabled=true
+http-response ^https:\/\/(games-dailycheckin\.)?shopee\.tw\/mkt\/coins\/api\/v2\/checkin_new$ script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_checkin.js, requires-body=true, tag=取得 手動每日簽到, enabled=true
+
+[MITM]
+hostname = shopee.tw,games-dailycheckin.shopee.tw

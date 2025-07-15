@@ -1,0 +1,14 @@
+#!name=蝦蝦 果園 模擬作物
+#!desc=因為作物收成後，無法查看好友資訊，模擬有作物，可以查看自己以外的資訊。 v20230109
+//#!author=Sdany
+//#!openUrl=https://sdany.somee.com/usjs/shopee/filter_farm_crop_fake.plugin
+
+[Script]
+cron "0 * * * *" script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee1/shopee_crop_fake.js, tag=顯示模擬作物資訊, enabled=false
+cron "0 * * * *" script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee1/shopee_crop_get.js,  tag=取得當前實際作物, enabled=false
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/orchard\/context\/get.*   script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee1/shopee_crop_fake.js, requires-body=true, tag=模擬作物, timeout=30, enabled=false
+
+[MITM]
+hostname = games.shopee.tw
+
+

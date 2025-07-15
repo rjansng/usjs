@@ -1,0 +1,61 @@
+//#!date=2023-08-09
+#!name=蝦皮 蝦蝦果園 過濾
+#!desc=v20231223 種子清單開放種子:自動 (可種植時間前30分鐘開放)
+// 取得澆水TOKEN：時效僅有30秒 (測試用)
+#!select=種子清單顯示預估水量,預設:是,否
+#!select=種子過濾清單,預設:是,否
+#!select=種子清單排序,預設:否,是
+#!select=種子清單僅顯示當日,預設:否,是
+#!select=種子清單顯示蝦幣,預設:是,否,4蝦幣
+#!select=種子清單顯示點心券,預設:是,否
+#!select=種子清單顯示優惠券,預設:是,否
+#!select=種子清單顯示優惠券其它,預設:是,否
+#!select=種子清單開放種子,預設:自動,否,是
+//#!select=澆水互助好友,預設,其他
+// #!select=取得澆水TOKEN,預設,否,是
+// #!select=重新取得澆水作物數據,預設,否,是
+// #!author=Sdany
+// #!openUrl=https://sdany.somee.com/usjs/shopee/farm_filter.plugin
+
+[Script]
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/orchard\/context\/get\?friendId=.+ script-path=https://sdany.somee.com/usjs/shopee/_shopee/crop/shopee_crop_info_friend.js,     requires-body=true, tag=好友作物狀態, enabled=false
+
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/orchard\/crop\/harvest$ script-path=https://sdany.somee.com/usjs/shopee/filter/farm_crop_harvest.js                                   , requires-body=true, tag=果園 作物收成資訊, enabled=true
+
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/prop\/list\?          script-path=https://sdany.somee.com/usjs/shopee/_shopee/crop/shopee_ads_shop_filterA.js,                          requires-body=true, tag=過慮商店道具 避免誤按, timeout=30, enabled=true
+http-request ^https:\/\/games\.shopee\.tw\/farm\/share\.html\?.+            script-path=https://sdany.somee.com/usjs/shopee/filter/farm_friend_anonymous_help_load.js,   requires-body=false, tag=站外澆水(開啟頁面自動澆水)Q, enabled=true
+#http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/share_info\/get\?.+            script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee3/shopee_farm_friend_anonymous_help_load.js,   requires-body=false, tag=站外澆水(開啟頁面自動澆水)Q2, enabled=true
+http-response ^https:\/\/games\.shopee\.tw\/farm\/share\.html\?.+            script-path=https://sdany.somee.com/usjs/shopee/filter/farm_friend_anonymous_help_load.js,   requires-body=true, tag=站外澆水(開啟頁面自動澆水), enabled=true
+
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/orchard\/crop\/(change\/)?meta\/get(.*) script-path=https://sdany.somee.com/usjs/shopee/filter/farm_crop_list.js ,  requires-body=true, tag=種子排序0蝦幣(留蝦幣.免運.限量), enabled=true
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/orchard\/crop\/(change\/)?meta\/get(.*) script-path=https://sdany.somee.com/usjs/shopee/_shopee/crop/shopee_crop_filter2.js , requires-body=true, tag=種子排序0蝦幣, enabled=false
+
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/v2\/list\?.+ script-path=https://sdany.somee.com/usjs/shopee/filter/farm_friend_list_v2.js                                     , requires-body=true, tag=果園 好友清單 調整, enabled=true
+//               https://games.shopee.tw/farm/api/friend/v2/list?source=&offset=&need_recommend=true&device_id=AED0533684FB4667B018F11170035942&is_ban_contact=false
+
+// http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/list\/get\?page=1&pageSize=\d{2}&offset=0&sortType=4&deviceId=[0-9A-F]{32}&all=0$ script-path=https://sdany.somee.com/usjs/shopee/filter/farm_friend_list.js, requires-body=false, tag=果園 好友清單 調整, enabled=true
+// http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/list\/get\?page=1&pageSize=\d{2}&offset=0&sortType=4&deviceId=[0-9A-F]{32}&all=0$ script-path=https://sdany.somee.com/usjs/shopee/filter/farm_friend_list.js, requires-body=true, tag=果園 好友清單 過濾, enabled=true
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/orchard\/context\/get\?friendId=\d+$ script-path=https://sdany.somee.com/usjs/shopee/filter/farm_friend_orchard_info.js, requires-body=true, tag=果園 好友資訊 更新, enabled=true
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/recommend\/get\?deviceId=[0-9A-F]{32}$ script-path=https://sdany.somee.com/usjs/shopee/filter/farm_friend_recommend.js,  requires-body=true, tag=果園 好友推薦 調整, enabled=true
+
+// http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/orchard\/crop\/create(.*) script-path=https://sdany.somee.com/usjs/shopee/filter/farm_get_crop_create_token.js                           , requires-body=true, tag=果園 種植 取得Token
+http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/orchard\/crop\/water(.*) script-path=https://sdany.somee.com/usjs/shopee/filter/farm_get_crop_water_token.js                             , requires-body=true, tag=果園 澆水 取得 Token
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/orchard\/crop\/water(.*) script-path=https://sdany.somee.com/usjs/shopee/filter/farm_get_crop_water_crop.js                             , requires-body=true, tag=果園 澆水 取得 作物資料
+http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/grocery_store\/(rn_)?claim script-path=https://sdany.somee.com/usjs/shopee/filter/farm_get_grocery_store_token.js                        , requires-body=true, tag=果園 商店水滴 取得Token
+// http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/v2\/help script-path=https://sdany.somee.com/usjs/shopee/filter/farm_get_friend_help_token.js                                    , requires-body=true, tag=果園 幫好友澆水 取得Token
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/v2\/help script-path=https://sdany.somee.com/usjs/shopee/filter/farm_get_friend_help.js                                         , requires-body=true, tag=果園 幫好友澆水 記錄
+
+#http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/orchard\/crop\/water(.*) script-path=https://sdany.somee.com/usjs/shopee/filter/farm_get_crop_token.js                                  , requires-body=true, tag=果園 澆水取得 Token
+#http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/orchard\/crop\/create(.*) script-path=https://sdany.somee.com/usjs/shopee/_shopee/crop/shopee_auto_crop_create.js                      , requires-body=true, tag=果園 種植取得 Token  #可不用了
+
+# http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/brands_ads\/list\?.*                               script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee2/shopee_filter_fruit_brands_ads_water.js, requires-body=true, tag=果園 商店2, enabled=false
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/brands_ads\/get_batch_item_for_item_card_full\?.*  script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee2/shopee_filter_fruit_brands_ads.js,       requires-body=true, tag=果園 商店, enabled=false
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/task\/listV2\?groceryEntryOn=true&withMicrosite=.*  script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee2/shopee_filter_fruit_task.js,            requires-body=true, tag=果園 任務欄清單過濾已完成, enabled=false
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/task\/listV2\?groceryEntryOn=true&withMicrosite=.*  script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee2/shopee_filter_fruit_task2.js,            requires-body=true, tag=果園 任務欄清單過濾蝦幣, enabled=true
+
+http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/message\/get\?page=1&pageSize=\d{2}$ script-path=https://sdany.somee.com/usjs/shopee/filter/farm_message.js,               requires-body=false, tag=果園 訊息 調整, enabled=true
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/message\/get\?page=1&pageSize=\d{2}$ script-path=https://sdany.somee.com/usjs/shopee/filter/farm_message.js,               requires-body=true, tag=果園 訊息 過濾, enabled=true
+
+[MITM]
+hostname = games.shopee.tw
+
