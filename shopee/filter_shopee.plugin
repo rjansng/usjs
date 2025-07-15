@@ -4,78 +4,78 @@
 #!select=顯示好康資訊B1,預設:否,是
 #!select=遊戲連結切換,預設:否,是
 //#!author=Sdany
-//#!openUrl=https://sdany.somee.com/usjs/shopee/filter_shopee.plugin
+//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter_shopee.plugin
 
 //[Rule]
 //URL-REGEX,^https:\/\/mall\.shopee\.tw\/api\/v4\/recommend\/recommend.+,REJECT
-#http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/search\/search_items\?.+   script-path=https://sdany.somee.com/usjs/shopee/filter/search_items_taiwan.js                                      , requires-body=false, tag=尋找 自動加入 台灣, enabled=true
+#http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/search\/search_items\?.+   script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/search_items_taiwan.js                                      , requires-body=false, tag=尋找 自動加入 台灣, enabled=true
 
 [Rewrite]
 // ^(https:\/\/games\.shopee\.tw\/gameplatform\/api\/v\d\/redeem_store\/item_list\/store\/\d+.+limit=)[\d]{2}(.+)$ header $1100$2
 ^(https:\/\/shopee\.tw\/api\/v4\/paidads\/ads\?.+count=)[\d]{2,3}(.+)$ header $11$2
 
 [Script]
-http-response ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_user_coins$ script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_get_user_coins.js,                                           requires-body=true,  tag=🍤我的蝦幣💰 取得現有蝦幣, enabled=true
+http-response ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_user_coins$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_get_user_coins.js,                                           requires-body=true,  tag=🍤我的蝦幣💰 取得現有蝦幣, enabled=true
 
-http-response ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_product_feeds_task$ script-path=https://sdany.somee.com/usjs/shopee/filter/get_product_feeds_task.js,                              requires-body=true,  tag=🍤我的蝦幣💰 商店 秒數 0, enabled=true
+http-response ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_product_feeds_task$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/get_product_feeds_task.js,                              requires-body=true,  tag=🍤我的蝦幣💰 商店 秒數 0, enabled=true
 
-http-request ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_product_feeds\?count=.+ script-path=https://sdany.somee.com/usjs/shopee/filter/get_product_feeds_fake.js,                              requires-body=false, tag=🍤我的蝦幣💰 偽裝商店廣告 REQ, enabled=true
-http-request ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_redeem_category_list script-path=https://sdany.somee.com/usjs/shopee/filter/get_redeem_category_list_fake.js,                               requires-body=false, tag=🍤我的蝦幣💰 偽裝兌換券類別清單 REQ, enabled=true
+http-request ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_product_feeds\?count=.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/get_product_feeds_fake.js,                              requires-body=false, tag=🍤我的蝦幣💰 偽裝商店廣告 REQ, enabled=true
+http-request ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_redeem_category_list script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/get_redeem_category_list_fake.js,                               requires-body=false, tag=🍤我的蝦幣💰 偽裝兌換券類別清單 REQ, enabled=true
 
-http-request ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/finish_product_feeds_task_and_claim$ script-path=https://sdany.somee.com/usjs/shopee/filter/finish_product_feeds_task_and_claimQ.js,    requires-body=true,  tag=🍤我的蝦幣💰 瀏覽商店 REQ GetToken, enabled=true
-http-response ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/finish_product_feeds_task_and_claim$ script-path=https://sdany.somee.com/usjs/shopee/filter/finish_product_feeds_task_and_claimS.js,   requires-body=true,  tag=🍤我的蝦幣💰 瀏覽商店 RES, enabled=true
-http-request ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v2\/task\/claim$ script-path=https://sdany.somee.com/usjs/shopee/filter/mkt_coins_task_claimQ.js,                        requires-body=true,  tag=🍤我的蝦幣💰 領任務蝦幣 REQ, enabled=true
-http-response ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v2\/task\/claim$ script-path=https://sdany.somee.com/usjs/shopee/filter/mkt_coins_task_claimS.js,                       requires-body=true,  tag=🍤我的蝦幣💰 領任務蝦幣 RES, enabled=true
-http-response ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v\d+\/tasks\?.+ script-path=https://sdany.somee.com/usjs/shopee/filter/mkt_coins_tasks.js,                                requires-body=true,  tag=🍤我的蝦幣💰 取任務ID 瀏覽 推薦商品 30秒, enabled=true
+http-request ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/finish_product_feeds_task_and_claim$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/finish_product_feeds_task_and_claimQ.js,    requires-body=true,  tag=🍤我的蝦幣💰 瀏覽商店 REQ GetToken, enabled=true
+http-response ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/finish_product_feeds_task_and_claim$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/finish_product_feeds_task_and_claimS.js,   requires-body=true,  tag=🍤我的蝦幣💰 瀏覽商店 RES, enabled=true
+http-request ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v2\/task\/claim$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/mkt_coins_task_claimQ.js,                        requires-body=true,  tag=🍤我的蝦幣💰 領任務蝦幣 REQ, enabled=true
+http-response ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v2\/task\/claim$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/mkt_coins_task_claimS.js,                       requires-body=true,  tag=🍤我的蝦幣💰 領任務蝦幣 RES, enabled=true
+http-response ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v\d+\/tasks\?.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/mkt_coins_tasks.js,                                requires-body=true,  tag=🍤我的蝦幣💰 取任務ID 瀏覽 推薦商品 30秒, enabled=true
 
 
-http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/banner\/batch_list$ script-path=https://sdany.somee.com/usjs/shopee/filter/batch_list.js,                                                                         requires-body=true, tag=Banner 調整, enabled=true
+http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/banner\/batch_list$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/batch_list.js,                                                                         requires-body=true, tag=Banner 調整, enabled=true
                                         
-http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/shop\/get_shop_tab(.*)  script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_ads_shop.js,                                                                requires-body=true, tag=過慮廣告商品, enabled=true
-http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/recommend\/recommend.+  script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_recommend.js,                                                                requires-body=false, tag=過慮推薦商品, enabled=true
-http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/mpi\/rcmd\/get_recommended_vouchers_by_model(.*)      script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_recommended_vouchers.js,                       requires-body=false,  tag=我的優惠券 隱藏推薦內容, enabled=true
+http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/shop\/get_shop_tab(.*)  script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_ads_shop.js,                                                                requires-body=true, tag=過慮廣告商品, enabled=true
+http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/recommend\/recommend.+  script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_recommend.js,                                                                requires-body=false, tag=過慮推薦商品, enabled=true
+http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/mpi\/rcmd\/get_recommended_vouchers_by_model(.*)      script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_recommended_vouchers.js,                       requires-body=false,  tag=我的優惠券 隱藏推薦內容, enabled=true
 
-http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/brands_ads\/get_batch_item_for_item_card_full       script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_farm_brands_ads_fake.js,                         requires-body=false, tag=商店廣告商品 果園 偽裝, enabled=true
-http-request ^https:\/\/shopee\.tw\/api\/v4\/paidads\/ads\?.+                                            script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_paidads_fake.js,                                requires-body=false, tag=商店廣告商品 偽裝, enabled=true
+http-request ^https:\/\/games\.shopee\.tw\/farm\/api\/brands_ads\/get_batch_item_for_item_card_full       script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_farm_brands_ads_fake.js,                         requires-body=false, tag=商店廣告商品 果園 偽裝, enabled=true
+http-request ^https:\/\/shopee\.tw\/api\/v4\/paidads\/ads\?.+                                            script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_paidads_fake.js,                                requires-body=false, tag=商店廣告商品 偽裝, enabled=true
 
-http-response ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v\d\/redeem_store\/item_list\/store\/.+ script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_redeem_store.js,                                  requires-body=true,  tag=遊戲 兌換商店 過濾 (隱藏折價券), enabled=false
+http-response ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v\d\/redeem_store\/item_list\/store\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_redeem_store.js,                                  requires-body=true,  tag=遊戲 兌換商店 過濾 (隱藏折價券), enabled=false
 
-http-response ^https:\/\/games\.shopee\.tw\/game\/store\/api\/scenario\/1\d{3}$ script-path=https://sdany.somee.com/usjs/shopee/filter/store_scenario_1xxx.js,                                                        requires-body=true,  tag=遊戲 商店 秒數 0 領任務, enabled=true
-http-response ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v3\/product\/ads\/scenario\/\d+\/settings script-path=https://sdany.somee.com/usjs/shopee/filter/product_scenario_1xxx.js,                             requires-body=true,  tag=遊戲 商店 秒數 0 領任務 V3, enabled=true
+http-response ^https:\/\/games\.shopee\.tw\/game\/store\/api\/scenario\/1\d{3}$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/store_scenario_1xxx.js,                                                        requires-body=true,  tag=遊戲 商店 秒數 0 領任務, enabled=true
+http-response ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v3\/product\/ads\/scenario\/\d+\/settings script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/product_scenario_1xxx.js,                             requires-body=true,  tag=遊戲 商店 秒數 0 領任務 V3, enabled=true
 
-http-request ^https:\/\/mall\.shopee\.tw\/api\/v2\/user\/profile\/get\/$ script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_token.js, tag=取得token
+http-request ^https:\/\/mall\.shopee\.tw\/api\/v2\/user\/profile\/get\/$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_token.js, tag=取得token
 
-// http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/account\/basic\/get_account_info$ script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_get_ua.js, tag=取得 UA
+// http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/account\/basic\/get_account_info$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_get_ua.js, tag=取得 UA
 
-http-request ^https:\/\/games\.shopee\.tw\/api-gateway\/luckydraw\/ping.* script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_luckydraw_ping.js                                            , requires-body=false, tag=過濾 LuckyDraw PING
-
-
+http-request ^https:\/\/games\.shopee\.tw\/api-gateway\/luckydraw\/ping.* script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_luckydraw_ping.js                                            , requires-body=false, tag=過濾 LuckyDraw PING
 
 
-// http-request ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_product_feeds\?count=.+ script-path=https://sdany.somee.com/usjs/shopee/filter/get_product_feeds.js,                                requires-body=false, tag=🍤我的蝦幣💰 過濾商店廣告 REQ, enabled=true
-// http-response ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_product_feeds\?count=.+ script-path=https://sdany.somee.com/usjs/shopee/filter/get_product_feedsS.js,                              requires-body=true,  tag=🍤我的蝦幣💰 過濾商店廣告 RES, enabled=true
+
+
+// http-request ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_product_feeds\?count=.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/get_product_feeds.js,                                requires-body=false, tag=🍤我的蝦幣💰 過濾商店廣告 REQ, enabled=true
+// http-response ^https:\/\/shopee\.tw\/api\/v4\/market_coin\/get_product_feeds\?count=.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/get_product_feedsS.js,                              requires-body=true,  tag=🍤我的蝦幣💰 過濾商店廣告 RES, enabled=true
 #    ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v2\/checkin_new$
-// http-request ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v2\/checkin_new$ script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_get_checkin.js, requires-body=true, tag=取得 簽到資訊, enabled=true
-// http-response ^https:\/\/(games-dailycheckin\.)?shopee\.tw\/mkt\/coins\/api\/v2\/checkin_new$ script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_checkin.js, requires-body=true, tag=取得 每日簽到, enabled=true
+// http-request ^https:\/\/games-dailycheckin\.shopee\.tw\/mkt\/coins\/api\/v2\/checkin_new$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_get_checkin.js, requires-body=true, tag=取得 簽到資訊, enabled=true
+// http-response ^https:\/\/(games-dailycheckin\.)?shopee\.tw\/mkt\/coins\/api\/v2\/checkin_new$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_checkin.js, requires-body=true, tag=取得 每日簽到, enabled=true
 
-### http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/recommend\/recommend.+  script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_recommend.js,                     requires-body=true, tag=過慮推薦商品, enabled=true
-#   http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/recommend\/recommend.+  script-path=https://sdany.somee.com/usjs/shopee/_shopee/crop/shopee_ads_shop_filter2.js,   requires-body=true, tag=過慮推薦商品2, enabled=true
+### http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/recommend\/recommend.+  script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_recommend.js,                     requires-body=true, tag=過慮推薦商品, enabled=true
+#   http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/recommend\/recommend.+  script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/crop/shopee_ads_shop_filter2.js,   requires-body=true, tag=過慮推薦商品2, enabled=true
 
-#   http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/task\/list\?activityCode=.+&eventCode=.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_task_list.js,                    requires-body=true,  tag=寵物村 每日任務/獎勵商店 保留兌換鑽石, enabled=true
+#   http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/task\/list\?activityCode=.+&eventCode=.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_task_list.js,                    requires-body=true,  tag=寵物村 每日任務/獎勵商店 保留兌換鑽石, enabled=true
 
-#   http-response ^https:\/\/mall\.shopee\.tw\/api\/v2\/voucher_wallet\/get_user_voucher_list(.*)             script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee2/shopee_filter_voucher.js,                requires-body=true,  tag=我的優惠券 隱藏賣場優惠券 (全部頁面), enabled=true
-#   http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/mpi\/rcmd\/get_recommended_vouchers_by_model(.*)      script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee2/shopee_filter_recommended.js,            requires-body=true,  tag=我的優惠券 隱藏推薦內容S, enabled=true
+#   http-response ^https:\/\/mall\.shopee\.tw\/api\/v2\/voucher_wallet\/get_user_voucher_list(.*)             script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/shopee2/shopee_filter_voucher.js,                requires-body=true,  tag=我的優惠券 隱藏賣場優惠券 (全部頁面), enabled=true
+#   http-response ^https:\/\/mall\.shopee\.tw\/api\/v4\/mpi\/rcmd\/get_recommended_vouchers_by_model(.*)      script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/shopee2/shopee_filter_recommended.js,            requires-body=true,  tag=我的優惠券 隱藏推薦內容S, enabled=true
 
-// http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/pdp\/.+&item_id=1.+shop_id=1       script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_farm_brands_ads_fake.js,                                requires-body=false, tag=商店廣告商品 果園用 偽裝, enabled=true
-// http-response ^https:\/\/shopee\.tw\/api\/v4\/paidads\/ads\?.+                                            script-path=https://sdany.somee.com/usjs/shopee/filter/shopee_paidads.js,                                    requires-body=true,  tag=商店廣告商品, enabled=true
-# http-response ^https:\/\/shopee\.tw\/api\/v4\/paidads\/ads\?.+                                            script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee2/shopee_filter_fruit_ads.js,                requires-body=true,  tag=商店 上 2, enabled=true
-#   http-request ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v\d\/redeem_store\/item_list\/store\/.+ script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee2/shopee_filter_redeem_store.js,               requires-body=false, tag=遊戲 兌換商店 調整, enabled=true
-#   http-response ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v\d\/redeem_store\/item_list\/store\/.+ script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee2/shopee_filter_redeem_store.js,              requires-body=true,  tag=遊戲 兌換商店 過濾2 (隱藏折價券), enabled=true
+// http-request ^https:\/\/mall\.shopee\.tw\/api\/v4\/pdp\/.+&item_id=1.+shop_id=1       script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_farm_brands_ads_fake.js,                                requires-body=false, tag=商店廣告商品 果園用 偽裝, enabled=true
+// http-response ^https:\/\/shopee\.tw\/api\/v4\/paidads\/ads\?.+                                            script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/shopee_paidads.js,                                    requires-body=true,  tag=商店廣告商品, enabled=true
+# http-response ^https:\/\/shopee\.tw\/api\/v4\/paidads\/ads\?.+                                            script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/shopee2/shopee_filter_fruit_ads.js,                requires-body=true,  tag=商店 上 2, enabled=true
+#   http-request ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v\d\/redeem_store\/item_list\/store\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/shopee2/shopee_filter_redeem_store.js,               requires-body=false, tag=遊戲 兌換商店 調整, enabled=true
+#   http-response ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v\d\/redeem_store\/item_list\/store\/.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/shopee2/shopee_filter_redeem_store.js,              requires-body=true,  tag=遊戲 兌換商店 過濾2 (隱藏折價券), enabled=true
 
 // https://games.shopee.tw/gameplatform/api/v3/product/ads/scenario/1032/settings
 
-#http-response ^https:\/\/mall\.shopee\.tw\/api\/v2\/user\/profile\/get\/$ script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee0/shopee_get_cookie.js,                                                    requires-body=false, tag=取得 Cookie ST/F 1, enabled=true
-#http-response ^https:\/\/mall\.shopee\.tw\/api\/v2\/user\/get_rating_summary\?userid=.+ script-path=https://sdany.somee.com/usjs/shopee/_shopee/shopee0/shopee_get_cookie.js,                                      requires-body=false, tag=取得 Cookie ST/F 2, enabled=true
+#http-response ^https:\/\/mall\.shopee\.tw\/api\/v2\/user\/profile\/get\/$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/shopee0/shopee_get_cookie.js,                                                    requires-body=false, tag=取得 Cookie ST/F 1, enabled=true
+#http-response ^https:\/\/mall\.shopee\.tw\/api\/v2\/user\/get_rating_summary\?userid=.+ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/_shopee/shopee0/shopee_get_cookie.js,                                      requires-body=false, tag=取得 Cookie ST/F 2, enabled=true
 # http-request ^https:\/\/mall\.shopee\.tw\/api\/v2\/user\/profile\/get\/$ script-path=https://kinta.ma/surge/scripts/shopee_token.js, tag=取得token
 
 [MITM]

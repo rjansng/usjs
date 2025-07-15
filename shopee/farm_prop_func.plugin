@@ -1,18 +1,18 @@
 #!name=蝦皮 蝦蝦果園 道具功能
 #!desc=v20230720
 //#!author=Sdany
-//#!openUrl=https://sdany.somee.com/usjs/shopee/farm_prop_func.plugin
+//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm_prop_func.plugin
 
 [Script]
-cron "10 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use_auto.js                    , enabled=false, tag=🛠使用道具 預設
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_backpack_list.js               , enabled=false, tag=🛠查看 道具清單
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 澆水好朋友  12, argument="4"
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 澆水好朋友  24, argument="5"
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 特大號水壺  25, argument="2"
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 特大號水壺  50, argument="3"
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use_bottled_water.js           , enabled=false, tag=🛠使用道具 水量補充包  40, argument="13"
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use_bottled_water.js           , enabled=false, tag=🛠使用道具 水量補充包 100, argument="7"
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use_bottled_water.js           , enabled=false, tag=🛠使用道具 水量補充包 200, argument="6"
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use_bottled_water.js           , enabled=false, tag=🛠使用道具 水量補充包 300, argument="10"
-cron "30 0 1 1 1" script-path=https://sdany.somee.com/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 特大號水壺 100, argument="15"
+cron "10 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use_auto.js                    , enabled=false, tag=🛠使用道具 預設
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_backpack_list.js               , enabled=false, tag=🛠查看 道具清單
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 澆水好朋友  12, argument="4"
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 澆水好朋友  24, argument="5"
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 特大號水壺  25, argument="2"
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 特大號水壺  50, argument="3"
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use_bottled_water.js           , enabled=false, tag=🛠使用道具 水量補充包  40, argument="13"
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use_bottled_water.js           , enabled=false, tag=🛠使用道具 水量補充包 100, argument="7"
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use_bottled_water.js           , enabled=false, tag=🛠使用道具 水量補充包 200, argument="6"
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use_bottled_water.js           , enabled=false, tag=🛠使用道具 水量補充包 300, argument="10"
+cron "30 0 1 1 1" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/prop_use.js                         , enabled=false, tag=🛠使用道具 特大號水壺 100, argument="15"
 

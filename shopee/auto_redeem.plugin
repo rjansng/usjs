@@ -3,8 +3,8 @@
 #!input=兌換等待秒
 #!select=3蝦幣限點,0,1200,2200,3200,5000
 //#!author=Sdany
-//#!openUrl=https://sdany.somee.com/usjs/shopee/auto_redeem.plugin
+//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/auto_redeem.plugin
 
 [Script]
-cron "0 0 * * *" script-path=https://sdany.somee.com/usjs/shopee/redeem/redeem_pet.js                       , enabled=true, tag=🐥寵物村 兌 3 蝦幣 (1200點)
-cron "0 0 * * *" script-path=https://sdany.somee.com/usjs/shopee/redeem/redeem_pet_15.js                    , enabled=true, tag=🐥寵物村 兌 1.5 蝦幣 (500點)
+cron "0 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_pet.js                       , enabled=true, tag=🐥寵物村 兌 3 蝦幣 (1200點)
+cron "0 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_pet_15.js                    , enabled=true, tag=🐥寵物村 兌 1.5 蝦幣 (500點)

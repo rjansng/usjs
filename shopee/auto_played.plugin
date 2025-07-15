@@ -1,21 +1,21 @@
 #!name=蝦皮 蝦蝦果園🌱 任務自動化
 #!desc=v20241021
 //#!author=Sdany
-//#!openUrl=https://sdany.somee.com/usjs/shopee/auto_played.plugin
+//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/auto_played.plugin
 
 [Script]
-cron "12 0 * * *" script-path=https://sdany.somee.com/usjs/shopee/clawbox/share.js                          , enabled=true , tag=夾夾樂🎮 分享 +1次
-cron "13 0,4,8,18 * * *" script-path=https://sdany.somee.com/usjs/shopee/farm/clawbox_played.js                , enabled=true , tag=夾夾樂🎮 玩過 (果園10水滴)
-cron "12 4 * * *" script-path=https://sdany.somee.com/usjs/shopee/clawbox/hat.js                            , enabled=true , tag=夾夾樂🎮 抽裝飾
-cron "14 0,12 * * *" script-path=https://sdany.somee.com/usjs/shopee/farm/tilematch_played.js                , enabled=true , tag=拼拼樂🎮 玩過 (果園10水滴)
-cron "15 0,12 * * *" script-path=https://sdany.somee.com/usjs/shopee/farm/candycrush_played.js                 , enabled=true , tag=消消樂🔶 玩過 (果園10水滴)
-cron "16 0-7,23 * * *" script-path=https://sdany.somee.com/usjs/shopee/candycrush/share.js                  , enabled=true , tag=消消樂🔶 分享 +1💎
-cron "20 0,12 * * *" script-path=https://sdany.somee.com/usjs/shopee/puzzle_bobble_be/reward.js                , enabled=true , tag=泡泡王🫧 領登入獎勵
-cron "22 0,4,8,12 * * *" script-path=https://sdany.somee.com/usjs/shopee/farm/puzzle-bobble-be_played_init.js      , enabled=true , tag=設定 自動玩過 泡泡王🫧 (扣次數)
-cron "25 0,4,8,12 * * *" script-path=https://sdany.somee.com/usjs/shopee/farm/auto_played.js                , enabled=true , tag=泡泡王.飛刀.玩過.領水滴 (果園各10水滴)
+cron "12 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/clawbox/share.js                          , enabled=true , tag=夾夾樂🎮 分享 +1次
+cron "13 0,4,8,18 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/clawbox_played.js                , enabled=true , tag=夾夾樂🎮 玩過 (果園10水滴)
+cron "12 4 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/clawbox/hat.js                            , enabled=true , tag=夾夾樂🎮 抽裝飾
+cron "14 0,12 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/tilematch_played.js                , enabled=true , tag=拼拼樂🎮 玩過 (果園10水滴)
+cron "15 0,12 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/candycrush_played.js                 , enabled=true , tag=消消樂🔶 玩過 (果園10水滴)
+cron "16 0-7,23 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/candycrush/share.js                  , enabled=true , tag=消消樂🔶 分享 +1💎
+cron "20 0,12 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/puzzle_bobble_be/reward.js                , enabled=true , tag=泡泡王🫧 領登入獎勵
+cron "22 0,4,8,12 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/puzzle-bobble-be_played_init.js      , enabled=true , tag=設定 自動玩過 泡泡王🫧 (扣次數)
+cron "25 0,4,8,12 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/auto_played.js                , enabled=true , tag=泡泡王.飛刀.玩過.領水滴 (果園各10水滴)
 
 
-//cron "14 0 * * *" script-path=https://sdany.somee.com/usjs/shopee/candycrush/reward.js                      , enabled=false , tag=消消樂🔷 領每日登入獎勵
-//cron "21 0 * * *" script-path=https://sdany.somee.com/usjs/shopee/knifethrow/share.js                       , enabled=false, tag=蝦飛刀🔪 分享 +1次
-//cron "22 0 * * *" script-path=https://sdany.somee.com/usjs/shopee/farm/knifethrow_played_init.js            , enabled=false, tag=設定 自動玩過 飛刀🔪 (扣次數)
+//cron "14 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/candycrush/reward.js                      , enabled=false , tag=消消樂🔷 領每日登入獎勵
+//cron "21 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/knifethrow/share.js                       , enabled=false, tag=蝦飛刀🔪 分享 +1次
+//cron "22 0 * * *" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/farm/knifethrow_played_init.js            , enabled=false, tag=設定 自動玩過 飛刀🔪 (扣次數)
 

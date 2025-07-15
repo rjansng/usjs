@@ -3,9 +3,9 @@
 #!select=消消樂點數兌換蝦幣,預設:否,0.4
 #!select=泡泡王點數兌換蝦幣,預設:否,5,1.5
 //#!author=Sdany
-//#!openUrl=https://sdany.somee.com/usjs/shopee/auto_redeem7.plugin
+//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/auto_redeem7.plugin
 
 [Script]
-cron "0 0 * * Sat" script-path=https://sdany.somee.com/usjs/shopee/redeem/redeem_candycrush.js, enabled=true, tag=🔶消消樂 兌 0.4 蝦幣 (40點)
-cron "0 0 * * Sun" script-path=https://sdany.somee.com/usjs/shopee/redeem/redeem_bobble_be.js, enabled=true, tag=🫧泡泡王 兌 5/1.5 蝦幣
+cron "0 0 * * Sat" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_candycrush.js, enabled=true, tag=🔶消消樂 兌 0.4 蝦幣 (40點)
+cron "0 0 * * Sun" script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/redeem/redeem_bobble_be.js, enabled=true, tag=🫧泡泡王 兌 5/1.5 蝦幣
 

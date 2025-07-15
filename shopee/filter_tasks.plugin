@@ -2,7 +2,7 @@
 #!name=蝦皮 任務 手動 記錄/過濾
 #!desc=v20231116 更新貪食蛇
 //#!author=Sdany
-//#!openUrl=https://sdany.somee.com/usjs/shopee/filter_tasks.plugin
+//#!openUrl=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter_tasks.plugin
 
 [Rule]
 // GAMEs 背後的記錄 擋掉
@@ -15,42 +15,42 @@ URL-REGEX,^https:\/\/c-api-sentry3\.sto\.shopee\.io\/api\/170\/store\/\?sentry_k
 
 [Script]
 // 寵物村 過濾
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/ads\/countdown_end_noti$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_countdown_end_noti.js                                       , requires-body=true, enabled=true, tag=鈕蛋機會 30秒商品廣告
-http-response ^https:\/\/idgame\.shopee\.tw\/worms\/api\/v\d\/event-config\/.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_worms_event_config.js                                               , requires-body=true, enabled=true, tag=過濾 貪食蛇 選單 避免誤按
-http-response ^https:\/\/idgame\.shopee\.tw\/worms\/api\/v\d\/event\/.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_worms_info.js                                                              , requires-body=true, enabled=true, tag=過濾 貪食蛇 次數 避免誤按
-http-response ^https:\/\/idgame\.shopee\.tw\/worms\/api\/v\d\/game(\/practice)?\/result\?app=true$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_worms_practiceS.js                               , requires-body=true, enabled=true, tag=過濾 貪食蛇 玩結束後的次數 避免誤按
-http-response ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/landing-page\?event_code=.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_crashball_info.js                                   , requires-body=true, enabled=true, tag=過濾 桌上曲棍球 次數 避免誤按
-http-response ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/events\/.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_crashball_event.js                                                   , requires-body=true, enabled=true, tag=過濾 桌上曲棍球 選單 避免誤按/未完成 通知
-// http-request ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/game\/start$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_crashball_start.js                                                   , requires-body=true, enabled=true, tag=過濾 桌上曲棍球 誤按蝦幣 Start
-http-request ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/game\/begin-round$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_crashball_begin_round.js                                       , requires-body=true, enabled=true, tag=過濾 桌上曲棍球 誤按蝦幣 Begin-Round
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/begin_pinball\?.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_pinball_begin.js                                            , requires-body=true, enabled=true, tag=取得 彈珠台 開始資訊
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/get_pinball_chance\?.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_pinball_chance.js                                      , requires-body=true, enabled=true, tag=過濾 彈珠台 次數 避免誤按
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/ads\/countdown_end_noti$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_countdown_end_noti.js                                       , requires-body=true, enabled=true, tag=鈕蛋機會 30秒商品廣告
+http-response ^https:\/\/idgame\.shopee\.tw\/worms\/api\/v\d\/event-config\/.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_worms_event_config.js                                               , requires-body=true, enabled=true, tag=過濾 貪食蛇 選單 避免誤按
+http-response ^https:\/\/idgame\.shopee\.tw\/worms\/api\/v\d\/event\/.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_worms_info.js                                                              , requires-body=true, enabled=true, tag=過濾 貪食蛇 次數 避免誤按
+http-response ^https:\/\/idgame\.shopee\.tw\/worms\/api\/v\d\/game(\/practice)?\/result\?app=true$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_worms_practiceS.js                               , requires-body=true, enabled=true, tag=過濾 貪食蛇 玩結束後的次數 避免誤按
+http-response ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/landing-page\?event_code=.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_crashball_info.js                                   , requires-body=true, enabled=true, tag=過濾 桌上曲棍球 次數 避免誤按
+http-response ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/events\/.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_crashball_event.js                                                   , requires-body=true, enabled=true, tag=過濾 桌上曲棍球 選單 避免誤按/未完成 通知
+// http-request ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/game\/start$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_crashball_start.js                                                   , requires-body=true, enabled=true, tag=過濾 桌上曲棍球 誤按蝦幣 Start
+http-request ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/game\/begin-round$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_crashball_begin_round.js                                       , requires-body=true, enabled=true, tag=過濾 桌上曲棍球 誤按蝦幣 Begin-Round
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/begin_pinball\?.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_pinball_begin.js                                            , requires-body=true, enabled=true, tag=取得 彈珠台 開始資訊
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/get_pinball_chance\?.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_pinball_chance.js                                      , requires-body=true, enabled=true, tag=過濾 彈珠台 次數 避免誤按
 
 // 寵物村 記錄
-http-request ^https:\/\/idgame\.shopee\.tw\/worms\/api\/v\d\/game(\/practice)?\/result\?app=true$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_worms_practice.js                                 , requires-body=true, enabled=true, tag=記錄 寵物村 貪食蛇
-http-request ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/game(\/practice)?\/result\?app=true$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_crashball_practice.js                        , requires-body=true, enabled=true, tag=記錄 寵物村 桌上曲棍球 (限名次)
+http-request ^https:\/\/idgame\.shopee\.tw\/worms\/api\/v\d\/game(\/practice)?\/result\?app=true$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_worms_practice.js                                 , requires-body=true, enabled=true, tag=記錄 寵物村 貪食蛇
+http-request ^https:\/\/idgame\.shopee\.tw\/crash-ball\/api\/v1\/game(\/practice)?\/result\?app=true$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_crashball_practice.js                        , requires-body=true, enabled=true, tag=記錄 寵物村 桌上曲棍球 (限名次)
 
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/food\/feed\?.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_food_feed.js                                                         , requires-body=true, enabled=true, tag=記錄 寵物村 餵食
-http-request ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/pet\/twist\?.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_twistQ.js                                                             , requires-body=true, enabled=true, tag=記錄 寵物村 扭蛋 REQ
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/pet\/twist\?.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_twist.js                                                             , requires-body=true, enabled=true, tag=記錄 寵物村 扭蛋 RES
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/competition\/finish_(trampoline|music)\?.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_pet.js                                 , requires-body=true, enabled=true, tag=記錄 寵物村 跳床 音樂
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/finish_football\?.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_pet.js                                                  , requires-body=true, enabled=true, tag=記錄 寵物村 踢足球
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/finish_(culture_quiz|race|art)_v2\?.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_pet.js                                , requires-body=true, enabled=true, tag=記錄 寵物村 校園 金頭腦 賽跑 找碴
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/finish_pinball\?.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_pet.js                                                   , requires-body=true, enabled=true, tag=記錄 寵物村 彈珠台
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/game_progress\?activityCode=[^=&]+&eventCode=[^=&]+&petID=\d+$ script-path=https://sdany.somee.com/usjs/shopee/filter/pet_game_progress.js, requires-body=true, enabled=true, tag=寵物村 完成點數任務 (團體賽)
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/food\/feed\?.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_food_feed.js                                                         , requires-body=true, enabled=true, tag=記錄 寵物村 餵食
+http-request ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/pet\/twist\?.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_twistQ.js                                                             , requires-body=true, enabled=true, tag=記錄 寵物村 扭蛋 REQ
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/pet\/twist\?.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_twist.js                                                             , requires-body=true, enabled=true, tag=記錄 寵物村 扭蛋 RES
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/competition\/finish_(trampoline|music)\?.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_pet.js                                 , requires-body=true, enabled=true, tag=記錄 寵物村 跳床 音樂
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/finish_football\?.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_pet.js                                                  , requires-body=true, enabled=true, tag=記錄 寵物村 踢足球
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/finish_(culture_quiz|race|art)_v2\?.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_pet.js                                , requires-body=true, enabled=true, tag=記錄 寵物村 校園 金頭腦 賽跑 找碴
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/finish_pinball\?.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_pet.js                                                   , requires-body=true, enabled=true, tag=記錄 寵物村 彈珠台
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/pet\/game\/game_progress\?activityCode=[^=&]+&eventCode=[^=&]+&petID=\d+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/pet_game_progress.js, requires-body=true, enabled=true, tag=寵物村 完成點數任務 (團體賽)
 
 // 果園
-http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/grocery_store\/rn_claim$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_farm.js                                                          , requires-body=true, enabled=true, tag=記錄 果園 瀏覽商店水滴
-http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/shake_tree\/submit2$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_farm.js                                                      , requires-body=true, enabled=true, tag=記錄 果園 搖樹
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/grocery_store\/rn_claim$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_farm.js                                                          , requires-body=true, enabled=true, tag=記錄 果園 瀏覽商店水滴
+http-response ^https:\/\/games\.shopee\.tw\/farm\/api\/friend\/shake_tree\/submit2$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_farm.js                                                      , requires-body=true, enabled=true, tag=記錄 果園 搖樹
 
 // 夾夾樂
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/claw\/v2\/start\/grab\/activity\/.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_clawbox.js                                         , requires-body=true, enabled=true, tag=記錄 夾夾樂 開始夾
-http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/claw\/v2\/grab\/box\/activity\/.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_clawbox.js                                           , requires-body=true, enabled=true, tag=記錄 夾夾樂 獲得物品
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/claw\/v2\/start\/grab\/activity\/.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_clawbox.js                                         , requires-body=true, enabled=true, tag=記錄 夾夾樂 開始夾
+http-response ^https:\/\/games\.shopee\.tw\/api-gateway\/claw\/v2\/grab\/box\/activity\/.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_clawbox.js                                           , requires-body=true, enabled=true, tag=記錄 夾夾樂 獲得物品
 
 // 飛刀
-http-response ^https:\/\/games\.shopee\.tw\/knife\/api\/v1\/begin\/activity\/.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_knifethrow.js                                                   , requires-body=true, enabled=true, tag=記錄 飛刀 開始丟
-http-request ^https:\/\/games\.shopee\.tw\/knife\/api\/v1\/end\/activity\/.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_knifethrow.js                                                      , requires-body=true, enabled=true, tag=記錄 飛刀 成績
-http-response ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v2\/goluckydraw\/module\/[^\/]+\/event\/[^\/]+\/lucky\?appid=.+$ script-path=https://sdany.somee.com/usjs/shopee/filter/tasks_knifethrow.js    , requires-body=true, enabled=true, tag=記錄 飛刀 獲得獎勵
+http-response ^https:\/\/games\.shopee\.tw\/knife\/api\/v1\/begin\/activity\/.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_knifethrow.js                                                   , requires-body=true, enabled=true, tag=記錄 飛刀 開始丟
+http-request ^https:\/\/games\.shopee\.tw\/knife\/api\/v1\/end\/activity\/.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_knifethrow.js                                                      , requires-body=true, enabled=true, tag=記錄 飛刀 成績
+http-response ^https:\/\/games\.shopee\.tw\/gameplatform\/api\/v2\/goluckydraw\/module\/[^\/]+\/event\/[^\/]+\/lucky\?appid=.+$ script-path=https://https://raw.githubusercontent.com/rjansng/usjs/shopee/filter/tasks_knifethrow.js    , requires-body=true, enabled=true, tag=記錄 飛刀 獲得獎勵
 
 [MITM]
 hostname = games.shopee.tw,idgame.shopee.tw,dem.shopee.com
