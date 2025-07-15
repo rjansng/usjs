@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,shopee.tw
+DOMAIN-SUFFIX,shopeemobile.com
+DOMAIN-SUFFIX,somee.com
+DOMAIN-SUFFIX,sdany.org
+URL-REGEX,[^\/]+\.shopee\.[^\/]+
+
