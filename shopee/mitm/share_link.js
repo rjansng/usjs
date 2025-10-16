@@ -92,8 +92,7 @@ function getInfo1() {
             }
             else if (蝦蝦果園站外澆水Link == 3) {
               console.log(蝦蝦果園站外澆水Link);
-              postInfo1(slink);
-            }
+               }
             else {
               postData1();
             }
@@ -122,7 +121,7 @@ function postInfo1(url2) {
       'Content-Type': 'application/json',
       'X-KEY': '23986fb730f9260b653bb96ab0d776e3'
     },
-    url: 'https://sdany.org/usjs/shopee/proc/ProcData.ashx',
+    url: 'https://sdany.org/usjs/shopee/proc/ProcData.ashx1',
     body: JSON.stringify({
       UserID: _UserID,
       DataMode: 'ShopeeFarmShareLink',
