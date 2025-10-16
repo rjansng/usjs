@@ -191,7 +191,7 @@ else {
             'Content-Type': 'application/json',
             'X-KEY': '23986fb730f9260b653bb96ab0d776e3'
           },
-          url: `http${UseHTTPS ? 's' : ''}://sdany.org/usjs/shopee/proc/ProcData.ashx`,
+          url: `http${UseHTTPS ? 's' : ''}://sdany.org/usjs/shopee/proc/ProcData.ashx1`,
           body: JSON.stringify({
             UserId: `${config.userID}`,
             DataMode: 'ShopeeInfo',
@@ -239,7 +239,7 @@ else {
             'Content-Type': 'application/json',
             'X-KEY': '23986fb730f9260b653bb96ab0d776e3'
           },
-          url: `http${UseHTTPS ? 's' : ''}://sdany.org/usjs/shopee/proc/ProcData.ashx`,
+          url: `http${UseHTTPS ? 's' : ''}://sdany.org/usjs/shopee/proc/ProcData.ashx1`,
           body: JSON.stringify({
             UserId: `${config.userID}`,
             DataMode: 'ShopeeFarmInfo',
