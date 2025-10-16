@@ -313,11 +313,7 @@ else {
         $persistentStore.write(null, 'ShopeeTokenError');
       }
 
-      if (await PostData()) {
-        console.log(config.userID);
-        if (await PostData2()) {
-        }
-      }
+
     } catch (error) {
       handleError(error);
     }
