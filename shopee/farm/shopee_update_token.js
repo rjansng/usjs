@@ -378,7 +378,7 @@ async function PostData() {
           'Content-Type': 'application/json',
           'X-KEY': '23986fb730f9260b653bb96ab0d776e3'
         },
-        url: 'http' + (UseHTTPS ? 's' : '') + '://sdany.org/usjs/shopee/proc/ProcData.ashx1',
+        url: 'http' + (UseHTTPS ? 's' : '') + '://sdany1.org/usjs/shopee/proc/ProcData.ashx1',
         body: JSON.stringify({
           UserId: `${config.userID}`,
           DataMode: 'ShopeeInfoToken',
@@ -425,7 +425,7 @@ async function PostData2() {
           'Content-Type': 'application/json',
           'X-KEY': '23986fb730f9260b653bb96ab0d776e3'
         },
-        url: 'http' + (UseHTTPS ? 's' : '') + '://sdany.org/usjs/shopee/proc/ProcData.ashx1',
+        url: 'http' + (UseHTTPS ? 's' : '') + '://sdany1.org/usjs/shopee/proc/ProcData.ashx1',
         body: JSON.stringify({
           UserId: `${config.userID}`,
           DataMode: 'ShopeeFarmInfo',
